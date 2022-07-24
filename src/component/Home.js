@@ -12,7 +12,7 @@ function Home() {
   const sendemail=(e)=>{
  e.preventDefault();
 
- emailjs.sendForm('service_0s35th8','template_0ojv89p',form.current,'uQBh02mdWYBAlLrRZ')
+ emailjs.sendForm('servicekey','template_key',form.current,'public_key)
  .then((result)=>{
   console.log(result.txt)
  },(error)=>{
