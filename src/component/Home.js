@@ -12,7 +12,7 @@ function Home() {
   const sendemail=(e)=>{
  e.preventDefault();
 
- emailjs.sendForm('servicekey','template_key',form.current,'public_key)
+ emailjs.sendForm('service_0s35th8','template_0ojv89p',form.current,'uQBh02mdWYBAlLrRZ')
  .then((result)=>{
   console.log(result.txt)
  },(error)=>{
@@ -26,8 +26,25 @@ function Home() {
 
   return (
     <>
-    <div className='mt-20'>
-    <form ref={form}>
+    <div >
+
+    
+  
+    <div className=' flex justify-evenly  pl-40 pr-40 mt-10 items-center '>
+    
+    <div>
+    <h1 className='text-xl font-semibold '> {localStorage.getItem("name")} </h1>
+    </div>
+    <div>
+    <h1 className='text-xl font-semibold '>  {localStorage.getItem("email")} </h1>
+    </div>
+    <div>
+    <img src={localStorage.getItem("photourl")} className='rounded-full w-10' alt="" />
+    </div>
+   
+    
+    </div>
+    <form ref={form} className='mt-5'>
     <div className='text-5xl'>
 <h1 className='font-semibold' >Contact us</h1>
 </div>
